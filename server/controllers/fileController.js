@@ -12,6 +12,7 @@ class FileController {
 			if (!parentFile) {
 				file.path = name
 				console.log("file path 1 = ", file.path)
+				// console.log("date = ", file.date)
 				await fileService.createDir(file)
 			} else {
 				file.path = `${parentFile.path}/${file.name}`

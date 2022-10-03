@@ -5,6 +5,7 @@ const File = new Schema({
 	type: {type: String, require: true},
 	accessLink: {type: String},
 	path: {type: String, default: ''},
+	date: {type: Date, default: Date.now()},
 	size: {type: Number, default: 0},
 	user: {type: ObjectId, ref: 'User'},
 	parent: {type: ObjectId, ref: 'File'},

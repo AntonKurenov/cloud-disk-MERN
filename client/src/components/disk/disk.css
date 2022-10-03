@@ -2,10 +2,41 @@
 .disk {
   margin-top: 20px;
 }
-.disk__btns {
+.disk .btns {
   display: flex;
 }
-.disk__create {
-  margin-left: 10px;
+.disk .btns__create {
+  margin-left: 20px;
+}
+.popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 0, 8, 0.5);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__content {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.popup__create {
+  align-self: flex-end;
+}
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+}
+.popup__input {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=disk.css.map */
