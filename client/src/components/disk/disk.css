@@ -31,12 +31,13 @@
 }
 .popup__create {
   align-self: flex-end;
+  margin-top: 10px;
 }
 .popup__header {
   display: flex;
   justify-content: space-between;
 }
-.popup__input {
+.popup input {
   margin: 20px 0;
 }
 /*# sourceMappingURL=disk.css.map */

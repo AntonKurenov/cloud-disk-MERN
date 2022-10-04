@@ -6,7 +6,7 @@
   align-items: center;
 }
 .file:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .file__img {
   justify-self: center;

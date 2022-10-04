@@ -14,16 +14,20 @@ const Disk = () => {
 		dispatch(getFiles(currentDir))
 	}, [currentDir])
 
-	function createDirHandler() {
+	function showPopupHandler() {
 		// dispatch(createDir(currentDir, 'heehhh'))
 		dispatch(setPopupDisplay('flex'))
+	}
+
+	function backClickHandler() {
+
 	}
 
 	return (
 		<div className="disk">
 			<div className="btns">
-				<button className="btns__back">назад</button>
-				<button className="btns__create" onClick={() => createDirHandler()}>cоздать папку</button>
+				<button className="btns__back" onClick={() => backClickHandler()}>назад</button>
+				<button className="btns__create" onClick={() => showPopupHandler()}>cоздать папку</button>
 			</div>
 			<FileList/>
 			<Popup/>
