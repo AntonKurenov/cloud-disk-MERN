@@ -3,13 +3,14 @@ import './file.css'
 import dirLogo from '../../../../assets/img/dir-logo.svg'
 import fileLogo from '../../../../assets/img/file-logo.svg'
 import {useDispatch, useSelector} from "react-redux";
-import {setCurrentDir} from "../../../../reducers/fileReducer";
+import {pushToStack, setCurrentDir} from "../../../../reducers/fileReducer";
 
 const File = ({file}) => {
 	const dispatch = useDispatch()
-	// const currentDir = useSelector(state => state.files.currentDir)
+	const currentDir = useSelector(state => state.files.currentDir)
 
 	function openDirHandler() {
+		dispatch(pushToStack(currentDir))
 		// console.log("currentDir = ", currentDir)
 		dispatch(setCurrentDir(file._id))
 	}
