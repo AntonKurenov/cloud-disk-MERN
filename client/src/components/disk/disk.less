@@ -1,4 +1,4 @@
-@import "../../utils/colors.css";
+@import "../../utils/colors";
 
 .disk {
   margin-top: 20px;
@@ -10,6 +10,18 @@
       margin-left: 20px;
     }
   }
+
+  &__upload-input {
+    display: none;
+  }
+
+  &__upload-label {
+    border: 2px dashed @font-color;
+    padding: 3px 7px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
 }
 
 .popup {

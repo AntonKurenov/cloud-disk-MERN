@@ -10,7 +10,6 @@ const fileRouter = require("./routes/file.routers")
 // const cors = require("cors")
 const corsMiddleware = require("./middleware/cors.middleware")
 
-
 app.use(fileUpload({}))
 app.use(corsMiddleware)
 app.use(express.json())
@@ -27,7 +26,7 @@ const start = async () => {
 			console.log("Server started on port ", PORT)
 		})
 	} catch (e) {
-
+		console.log(e)
 	}
 }
 

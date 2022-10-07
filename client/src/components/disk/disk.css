@@ -1,4 +1,3 @@
-@import "../../utils/colors.css";
 .disk {
   margin-top: 20px;
 }
@@ -7,6 +6,15 @@
 }
 .disk .btns__create {
   margin-left: 20px;
+}
+.disk__upload-input {
+  display: none;
+}
+.disk__upload-label {
+  border: 2px dashed #566885;
+  padding: 3px 7px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 .popup {
   width: 100%;
