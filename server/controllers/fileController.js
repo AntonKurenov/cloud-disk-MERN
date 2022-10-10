@@ -64,7 +64,7 @@ class FileController {
 			if (fs.existsSync(path)) {
 				return res.status(400).json({message: "File already exist"})
 			}
-			file.mv(path)
+			await file.mv(path)
 
 			const type = file.name.split('.').pop()
 			const dbFile = new File({
